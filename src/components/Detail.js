@@ -58,9 +58,11 @@ function Detail(props) {
             })}
           </section>
 
-          {news.length === totalNews ? null : (
-            <button className="btn btn-dark" onClick={loadMore}>Cargar Mas {" "} </button>
-          )}
+          <section>
+            {news.length === totalNews ? null : (
+              <button className="btn btn-dark button-container" onClick={loadMore}>Cargar Mas {" "} </button>
+            )}
+          </section>
         </>
       ) : search ? (
         loading ? (
